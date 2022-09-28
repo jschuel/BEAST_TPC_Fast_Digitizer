@@ -19,6 +19,6 @@ I recommend using [Anaconda](https://www.anaconda.com/) to install the appropria
 `conda activate digitizer_env`
 
 ### Required packages
-`conda install root`
+`conda install -c conda-forge root` (install ROOT first [takes a while] to avoid any issues with other packages!)
 `conda install pandas`
-`conda install root_pandas`
+`conda install -c conda-forge root_pandas`
