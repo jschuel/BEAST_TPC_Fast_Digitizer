@@ -28,4 +28,4 @@ I recommend using [Anaconda](https://www.anaconda.com/) to install the appropria
 
 `conda install pyarrow` (needed to read and write `.feather` files with pandas)
 
-After installing these packages, you should be able to run **`digitize.py`**. Test files are included in this package, so out of the box, you may test **`python3 digitize.py 1000`**, which will create the following file: `data/digitized/testFileDigitized_gain1000.feather`. You can open these files using [pandas' read_feather function](https://pandas.pydata.org/docs/reference/api/pandas.read_feather.html)
+After installing these packages, you should be able to run **`digitize.py`**. Test files are included in this package, so out of the box, you may test **`python3 digitize.py 1000`**, which will create the following file: `data/digitized/testFileDigitized_gain1000.feather`. You can open these files using [pandas' read_feather function](https://pandas.pydata.org/docs/reference/api/pandas.read_feather.html).
