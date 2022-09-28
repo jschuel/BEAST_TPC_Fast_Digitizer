@@ -17,7 +17,7 @@ import ROOT
 from ROOT import TVector3
 from os import sys
 import h5py as h5
-#import hdf5plugin #If noise file doesn't open, install and import this
+import hdf5plugin
 pd.set_option('mode.chained_assignment', None) #remove pandas copy warning
 
 class digitize:
