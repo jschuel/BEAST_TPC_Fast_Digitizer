@@ -15,17 +15,32 @@ This package contains tools to simulate recoil events in a BEAST TPC. The module
 I recommend using [Anaconda](https://www.anaconda.com/) to install the appropriate packages. **Highly recommended**: create a separate environment when using this digitizer so that package dependencies don't interfere with your usual working environment(s).
 
 ### Optional but recommended (Note: python 3.6 is required for root_pandas!)
-`conda create -n digitizer_env -c conda-forge python=3.6`
+`conda create -n digitizer_env python=3.6 root -c conda-forge` (Installs root while you create the new environment, which seems to be the best way to do it)
 `conda activate digitizer_env`
 
 ### Required packages
-`conda install -c conda-forge root` (install ROOT first [takes a while] to avoid any issues with other packages!)
+`conda install -c conda-forge root` (**Not needed if you followed the optional but recommended steps above!**)
 
 `conda install pandas`
+
 `conda install -c conda-forge root_pandas`
 
-`conda install numpy numba tqdm hdf5 h5py hdf5plugin matplotlib tqdm`
+`conda install numba`
 
-`conda install pyarrow` (needed to read and write `.feather` files with pandas)
+`conda install tqdm`
+
+`conda install hdf5`
+
+`conda install h5py` 
+
+`pip3 install hdf5plugin`
+
+`pip3 install tables`
+
+`conda install matplotlib-base`
+
+`pip3 install pyarrow` (pyarrow needed to read and write `.feather` files with pandas)
+
+`conda install scipy`
 
 After installing these packages, you should be able to run **`digitize.py`**. Test files are included in this package, so out of the box, you may test **`python3 digitize.py 1000`**, which will create the following file: `data/digitized/testFileDigitized_gain1000.feather`. You can open these files using [pandas' read_feather function](https://pandas.pydata.org/docs/reference/api/pandas.read_feather.html).
