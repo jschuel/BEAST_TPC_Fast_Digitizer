@@ -20,5 +20,7 @@ I recommend using [Anaconda](https://www.anaconda.com/) to install the appropria
 
 ### Required packages
 `conda install -c conda-forge root` (install ROOT first [takes a while] to avoid any issues with other packages!)
+
 `conda install pandas`
 `conda install -c conda-forge root_pandas`
+`conda install numpy numba tqdm hdf5 h5py hdf5plugin matplotlib tqdm`
